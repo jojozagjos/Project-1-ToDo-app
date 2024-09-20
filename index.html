@@ -7,20 +7,32 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    <div id="DIV" class="header">
-        <h2>My To Do List</h2>
-        <input type="text" id="myInput" placeholder="Title...">
-        <span onclick="newElement()" class="addBtn">Add</span>
-      </div>
-      
-      <ul id="UL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
-        <li>Meet George</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
-      </ul>
+    <div class="addlistdiv">
+        <input type="text" id="ListInput" placeholder="Title...">
+        <span onclick="addList()" class="addList">Add List</span>
+    </div>
+    
+    <div id="listsContainer" class="lists-container">
+        <div class="container">
+            <div id="1-div" class="header">
+                <button class="deleteBtn" onclick="deleteList(this)">X</button>
+                <h2>My To Do List</h2>
+                <input type="text" id="myInput" placeholder="Title...">
+                <span onclick="addItem(this)" class="addBtn">Add</span>
+            </div>
+            
+            <ul id="1-ul">
+                <li>Hit the gym</li>
+                <li class="checked">Pay bills</li>
+                <li>Meet George</li>
+                <li>Buy eggs</li>
+                <li>Read a book</li>
+                <li>Organize office</li>
+            </ul>
+        </div>
+        <!-- New Lists -->
+    </div>
+
     <script src="Script/script.js"></script>
 </body>
 </html>
